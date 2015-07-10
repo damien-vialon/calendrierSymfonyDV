@@ -1,0 +1,7 @@
+dv_calendrier_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: DVCalendrierBundle:Default:index }
+
+hello_the_world:
+    path:     /hello-world
+    defaults: { _controller: DVCalendrierBundle:Advert:index }

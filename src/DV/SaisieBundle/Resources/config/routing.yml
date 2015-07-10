@@ -1,0 +1,3 @@
+dv_saisie_homepage:
+    path:     /saisie
+    defaults: { _controller: DVSaisieBundle:Default:index }
