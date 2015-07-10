@@ -43,6 +43,7 @@ class DefaultController extends Controller
 
     public function enregistrerAction()
     {
+        $em = $this->getDoctrine()->getManager();
         $professeur= new Professeur();
 
         // Création du formulaire
@@ -53,6 +54,15 @@ class DefaultController extends Controller
             ->getForm();
 
         $form->handleRequest($this->getRequest());
+
+        if ($form->isValid()) {
+            // enregistrement BDD
+            $professeur = $form->getData();
+            $em->persist($professeur);
+            $em->flush();
+
+            return $this->redirect($this->generateUrl('dv_saisie_enregistrer'));
+        }
 
         return $this->render('DVSaisieBundle:Default:addOk.html.twig', array(
             'form' => $form->createView(),
