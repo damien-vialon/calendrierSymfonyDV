@@ -1,3 +1,9 @@
+<p> Planning </p>
+
 <input type="button" value="Accueil" onclick="window.location='../index';"/>
 
-<p> Planning </p>
+<ul>
+    {% for professeur in listProfesseurs %}
+        <li>{{ professeur.nom }}</li>
+    {% endfor %}
+</ul>
