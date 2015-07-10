@@ -1,7 +1,11 @@
 dv_saisie_homepage:
-    path:     /saisie
+    path:     /index
     defaults: { _controller: DVSaisieBundle:Default:index }
 
-dv_saisie_ok:
-    path:     /saisie/succes
-    defaults: { _controller: DVSaisieBundle:Default:enregister }
+dv_saisie_add:
+    path:     /index/professeur/saisie
+    defaults: { _controller: DVSaisieBundle:Default:add }
+
+dv_saisie_enregistrer:
+    path:     /index/professeur/saisie/succes
+    defaults: { _controller: DVSaisieBundle:Default:enregistrer }
