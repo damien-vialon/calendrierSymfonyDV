@@ -4,10 +4,10 @@ namespace DV\SaisieBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class DefaultController extends Controller
+class PlanningController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('DVSaisieBundle:Default:index.html.twig');
+        return $this->render('DVSaisieBundle:Planning:index.html.twig');
     }
 }

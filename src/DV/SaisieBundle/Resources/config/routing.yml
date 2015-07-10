@@ -4,8 +4,12 @@ dv_saisie_homepage:
 
 dv_saisie_add:
     path:     /index/professeur/saisie
-    defaults: { _controller: DVSaisieBundle:Default:add }
+    defaults: { _controller: DVSaisieBundle:Professeur:add }
 
 dv_saisie_enregistrer:
     path:     /index/professeur/saisie/succes
-    defaults: { _controller: DVSaisieBundle:Default:enregistrer }
+    defaults: { _controller: DVSaisieBundle:Professeur:enregistrer }
+
+dv_planning_homepage:
+    path:     /index/planning
+    defaults: { _controller: DVSaisieBundle:Planning:index }
