@@ -1,7 +1,13 @@
+{# Titre #}
 <p> Planning </p>
 
+{# Bouton retour #}
 <input type="button" value="Accueil" onclick="window.location='../index';"/>
+<input type="button" value="Ajouter un nouveau cours" onclick="window.location='planning/saisie';"/>
+<p></p>
 
+{# Affiche de la liste des professeurs#}
+<p>Liste des professeurs :</p>
 <ul>
     {% for professeur in listProfesseurs %}
         <li>{{ professeur.nom }}</li>

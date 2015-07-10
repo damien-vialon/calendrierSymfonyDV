@@ -90,4 +90,14 @@ class Professeur
     {
         return $this->prenom;
     }
+
+    /**
+     * Get nom + Get prenom
+     *
+     * @return string
+     */
+    public function getProfesseur()
+    {
+        return $this->nom.' '.$this->prenom;
+    }
 }

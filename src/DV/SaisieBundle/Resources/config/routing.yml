@@ -13,3 +13,11 @@ dv_saisie_enregistrer:
 dv_planning_homepage:
     path:     /index/planning
     defaults: { _controller: DVSaisieBundle:Planning:index }
+
+dv_planning_add:
+    path:     /index/planning/saisie
+    defaults: { _controller: DVSaisieBundle:Planning:add }
+
+dv_planning_enregistrer:
+    path:     /index/planning/saisie/succes
+    defaults: { _controller: DVSaisieBundle:Planning:enregistrer }
